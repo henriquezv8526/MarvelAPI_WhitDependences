@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link href="~/Content/css/jquery.dataTables.css" rel="stylesheet" />
+
+<div id="page-wrapper">
+    <!-- Modal avisos-->
+    <div id="popupAvisos">
+    </div>
+    <div id="fondoPopupAvisos" class="fondoAviso">    </div>
+    <!-- Modal avisos-->
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-10">
+                <h2 style="color: #003082;">Comics por Tienda <a href="#" title="Ayuda" data-toggle="modal" data-target="#mdlAyuda"><i style="font-size:23px; color:red;" class="fa fa-question-circle"></i></a></h2>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Listado comics por Tienda
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive" id="tblSucursales">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Content/js/jquery.dataTables.js"></script>
+<script src="~/Content/js/dataTables.bootstrap.js"></script>
+<script src="~/Content/js/ComicsStore/AdminComicsStore.js"></script>
+<script src="~/Content/js/jquery.dataTables.min.js"></script>

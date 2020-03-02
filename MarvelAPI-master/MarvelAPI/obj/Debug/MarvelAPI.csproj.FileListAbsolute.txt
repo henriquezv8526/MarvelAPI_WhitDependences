@@ -1,0 +1,15 @@
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\MarvelAPI.dll
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\MarvelAPI.pdb
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\RestSharp.dll
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\RestSharp.xml
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\obj\Debug\MarvelAPI.csprojAssemblyReference.cache
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\obj\Debug\MarvelAPI.csproj.CopyComplete
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\obj\Debug\MarvelAPI.dll
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\obj\Debug\MarvelAPI.pdb
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\MarvelAPI.dll.config
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\EntityFramework.dll
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\EntityFramework.xml
+C:\Users\HugoCPS11\Documents\BitTec\MarvelAPI-master\MarvelAPI\bin\Debug\EntityFramework.SqlServer.xml

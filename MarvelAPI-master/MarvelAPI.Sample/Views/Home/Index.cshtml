@@ -1,0 +1,69 @@
+﻿@using MarvelAPI.Sample.Models
+@using MarvelAPI
+@model MarvelViewModel
+@{
+    
+}
+   
+
+    <div id="page-wrapper">
+        <!-- Modal avisos-->
+        <div id="popupAvisos">
+        </div>
+        <div id="fondoPopupAvisos" class="fondoAviso">    </div>
+        <!-- Modal avisos-->
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1 style="color: #003082;">Evaluación de Conocimientos </h1>
+                </div>
+            </div>
+            <hr />
+            
+        </div>
+    </div>
+
+ 
+@section scripts
+{
+    <script type="text/x-handlebars" id="getComics">
+        <p>
+            @Html.LabelFor(model => model.GetComics.Format)
+            @Html.DropDownListFor(model => model.GetComics.Format, Model.ComicFormatSelectList)
+        </p>
+        <p>
+            @Html.LabelFor(model => model.GetComics.FormatType)
+            @Html.DropDownListFor(model => model.GetComics.FormatType, Model.ComicFormatTypeSelectList)
+        </p>
+        <p>
+            @Html.LabelFor(model => model.GetComics.NoVariants)
+            @Html.DropDownListFor(model => model.GetComics.NoVariants, Model.BooleanSelectList)
+        </p>
+        <p>
+            @Html.LabelFor(model => model.GetComics.Descriptor)
+            @Html.DropDownListFor(model => model.GetComics.Descriptor, Model.DateDescriptorsSelectList)
+        </p>
+        <p>
+            @Html.LabelFor(model => model.GetComics.HasDigitalIssue)
+            @Html.DropDownListFor(model => model.GetComics.HasDigitalIssue, Model.BooleanSelectList)
+        </p>
+        <p>
+            @Html.LabelFor(model => model.GetComics.Order)
+            @Html.ListBoxFor(model => model.GetComics.Order, Model.OrderByOptionsSelectList)
+        </p>
+        <p>
+            @Html.LabelFor(model => model.GetComics.Limit)
+            @Html.TextBoxFor(model => model.GetComics.Limit)
+        </p>
+        <p>
+            @Html.LabelFor(model => model.GetComics.Offset)
+            @Html.TextBoxFor(model => model.GetComics.Offset)
+        </p>
+        <input type="submit" value="Submit" />
+    </script>
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/router.js"></script>
+    <script src="~/Scripts/store.js"></script>
+    <script src="~/Scripts/models/comic.js"></script>
+    <script src="~/Scripts/routes/comicsRoute.js"></script>
+}

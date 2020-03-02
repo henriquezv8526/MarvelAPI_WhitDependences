@@ -1,0 +1,94 @@
+﻿
+.modal-header {
+    background-color: #003082;
+}
+
+.modal-title {
+    color: white;
+}
+
+span.error {
+    color: red;
+}
+
+.fondoAviso{
+        display: none;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 1200px;
+        background-color: black;
+        z-index:5001;
+        -moz-opacity: 0.6;
+        opacity:.60;
+        filter: alpha(opacity=60);
+    }
+    .avisoGrande {
+        display: none;
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        padding: 16px;
+        border: 2px solid #003082;
+        background-color: black;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+        z-index:5002;
+        overflow: auto;
+        border-radius: 22px;
+    }
+    .avisoMediano {
+        display: none;
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 28%;
+        padding: 16px;
+        border: 2px solid #003082;
+        background-color: black;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+        z-index:5002;
+        overflow: auto;
+        border-radius: 22px;
+    }
+    .avisoChico {
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 40%;
+        width: 25%;
+        height: 25%;
+        padding: 16px;
+        border: 2px solid #003082;
+        background-color: black;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+        z-index:5002;
+        overflow: auto;
+        border-radius: 22px;
+    }
+     .avisoSinBtn {
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 40%;
+        width: 25%;
+        height: 15%;
+        padding: 16px;
+        border: 2px solid #003082;
+        background-color: black;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+        z-index:5002;
+        overflow: auto;
+        border-radius: 22px;
+    }

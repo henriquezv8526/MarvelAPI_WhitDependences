@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "Sucursales";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/css/jquery.dataTables.css" rel="stylesheet" />
+
+<div id="page-wrapper">
+    <!-- Modal avisos-->
+    <div id="popupAvisos">
+    </div>
+    <div id="fondoPopupAvisos" class="fondoAviso">    </div>
+    <!-- Modal avisos-->
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-10">
+                <h2 style="color: #003082;">Administración de sucursales <a href="#" title="Ayuda" data-toggle="modal" data-target="#mdlAyuda"><i style="font-size:23px; color:red;" class="fa fa-question-circle"></i></a></h2>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Listado de sucursales
+                        <a href="#" title="Crear sucursal" data-toggle="modal" id="AddSucursal">
+                            <div style=" float: right;">
+                                <center><i class="fa fa-building" style=" font-size: 30px; color: #003082; vertical-align: middle;"></i></center>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive" id="tblSucursales">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal agregar sucursal-->
+<div class="modal fade" id="mdlInsertSucursal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Agregar sucursal</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" id="frmInsertSucursal">
+
+                    <div class="form-group">
+                        <label for="Nombre">Nombre: </label>
+                        <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Nombre de la sucursal">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Ubicacion">Ubicacion: </label>
+                        <input type="text" class="form-control" id="Ubicacion" name="Ubicacion" placeholder="Ubicacion de la sucursal">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Telefonos">Telefonos: </label>
+                        <input type="text" class="form-control" id="Telefonos" name="Telefonos" placeholder="Telefonos">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-success">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal agregar sucursal-->
+<!-- Modal editar sucursal-->
+<div class="modal fade" id="mdlEditSucursal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="overflow:auto;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Editar Sucursal</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" id="frmEditSucursal">
+                    
+                    <div class="form-group">
+                        <label for="NombreEdit">Nombre: </label>
+                        <input type="text" class="form-control" id="NombreEdit" name="NombreEdit" placeholder="Nombre de la sucursal">
+                    </div>
+                    <div class="form-group">
+                        <label for="UbicacionEdit">Ubicacion: </label>
+                        <input type="text" class="form-control" id="UbicacionEdit" name="UbicacionEdit" placeholder="Ubicacion de la sucursal">
+                    </div>
+                    <div class="form-group">
+                        <label for="TelefonosEdit">Telefonos: </label>
+                        <input type="text" class="form-control" id="TelefonosEdit" name="TelefonosEdit" placeholder="Telefonos">
+                    </div>
+                    @*<div class="form-group">
+                        <label for="FechaCreacionEdit">Fecha Creacion: </label>
+                        <input type="text" class="form-control" id="FechaCreacionEdit" name="FechaCreacionEdit" placeholder="Fecha Creacion">
+                    </div>*@
+                   
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-success" id="btnAceptSaveBranch">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal agregar sucursal-->
+<!-- Modal eliminar sucursal-->
+<div class="modal fade" id="mdlDeleteSucursal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Eliminar sucursal</h4>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-warning">¿Estas seguro que deseas eliminar la sucursal?</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success" id="btnAceptDeleteSucursal">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal eliminar sucursal-->
+
+
+
+<script src="~/Content/js/jquery.dataTables.js"></script>
+<script src="~/Content/js/dataTables.bootstrap.js"></script>
+<script src="~/Content/js/Branch/AdminBranch.js"></script>
+<script src="~/Content/js/jquery.dataTables.min.js"></script>
